@@ -34,12 +34,12 @@ module.exports = {
             {
                 test: /\.s?css$/,
                 use:[
-                    'vue-style-loader', 
+                    // 'vue-style-loader', 버그로 인해 style-loader를 사용 
                     'style-loader', 
                     'css-loader', 
                     'postcss-loader', 
                     'sass-loader']
-            },
+            }용
             {
                 test: /\.js$/,
                 use: 'babel-loader'
