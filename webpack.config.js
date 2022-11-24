@@ -36,9 +36,22 @@ module.exports = {
                 use:[
                     // 'vue-style-loader', 버그로 인해 style-loader를 사용 
                     'style-loader', 
-                    'css-loader', 
+                    // css-loader 소스맵 옵션 활성화
+                    {
+                        loader: 'css-loader',
+                        options: {
+                          sourceMap: true
+                        }
+                    }, 
                     'postcss-loader', 
-                    'sass-loader']
+                    // sass-loader 소스맵 옵션 활성화
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                        sourceMap: true
+                        }
+                    }
+                ]
             },
             {
                 test: /\.js$/,
