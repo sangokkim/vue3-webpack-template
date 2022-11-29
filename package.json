@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "eslint --ext .js,.vue src",
+    "fix": "eslint --fix --ext .js,.vue src"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.2",
@@ -40,6 +41,7 @@
     "last 2 versions"
   ],
   "dependencies": {
+    "-": "^0.0.1",
     "vue": "^3.2.45"
   }
 }

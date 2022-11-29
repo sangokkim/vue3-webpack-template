@@ -1,3 +1,5 @@
 <template>
-    <img src="~assets/logo.png" alt="Heropy">
+  <img
+    src="~assets/logo.png"
+    alt="heropy" />
 </template>
